@@ -12,5 +12,6 @@
 
 <div class="links">
   <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+  <%= link_to 'Delete', edit_todo_list_path(@todo_list), method: :delete, data: { confirm: "Apa kamu yakin?" } %> |
   <%= link_to 'Kembali', todo_lists_path %>
 </div>
