@@ -17,6 +17,7 @@
 $white_opaque: rgba(250, 250, 250, .3);
 $dark: #5A2541;
 $light: #EA3556;
+$green: #1ea6a8;
 $font: 'Ubuntu', sans-serif;
 
 * {
@@ -43,6 +44,14 @@ a {
 	}
 }
 
+h1 {
+	text-align: center;
+	margin-top: 1em;
+	img {
+		width: 300px;
+	}
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -63,7 +72,7 @@ a {
 .container {
 	max-width: 750px;
 	background: $white_opaque;
-	margin: 3em auto 20px;
+	margin: 1.5em auto 20px;
 	border-radius: 7px;
 	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
 	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
@@ -100,7 +109,7 @@ a {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 0.9em;
-	color: $dark;
+	color: $green;
 	font-weight: 100;
 }
 
@@ -121,7 +130,7 @@ a {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-right: 1px solid rgba(250,250,250, .3);
+			// border-right: 1px solid rgba(250,250,250, .3);
 			padding: 1em 0;
 		}
 		.todo_item {
@@ -138,7 +147,7 @@ a {
 			width: 10%;
 			float: left;
 			text-align: center;
-			border-left: 1px solid rgba(250,250,250, .3);
+			// border-left: 1px solid rgba(250,250,250, .3);
 			padding: 1em 0;
 		}
 		i {
@@ -174,7 +183,7 @@ a {
 			cursor: pointer;
 			@extend .ease;
 			&:hover {
-				background: $dark;
+				background: $light;
 			}
 		}
 		::-webkit-input-placeholder { color: $dark; }
@@ -230,7 +239,7 @@ input[type="submit"] {
 	color: $dark;
 	@extend .ease;
 	&:hover {
-		background: $dark;
+		background: $light;
 		color: white;
 	}
 }
@@ -238,6 +247,15 @@ input[type="submit"] {
 
 .ease {
 	transition: all .4s ease-in-out;
+}
+
+footer {
+	margin-bottom: 30px;
+	p {
+		font-size: 11pt;
+		color: white;
+		text-align: center;
+	}
 }
 
 @import "font-awesome";
